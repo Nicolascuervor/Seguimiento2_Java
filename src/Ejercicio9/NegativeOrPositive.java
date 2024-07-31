@@ -1,8 +1,11 @@
 package Ejercicio9;
 
-public class Norp {
+public class NegativeOrPositive {
     private int num;
 
+    public NegativeOrPositive(int num) {
+        this.num = num;
+    }
 
     public int getNum() {
         return num;

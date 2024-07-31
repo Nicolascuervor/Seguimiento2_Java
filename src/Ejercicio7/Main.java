@@ -4,16 +4,16 @@ import javax.swing.*;
 
 public class Main {
     public static void main(String[] args) {
-        Complaint comp = new Complaint();
 
-        comp.numComplaint = 12;
-        comp.setStatusComplaint("Denegate");
-        comp.setNamePerson(JOptionPane.showInputDialog(null, "Name: "));
-        comp.setAffair(JOptionPane.showInputDialog(null, "Affair: "));
-        comp.descriptionComplaint = JOptionPane.showInputDialog(null, "Description: ");
+        String parameterName = JOptionPane.showInputDialog(null, "Name: ");
+        String parameterAffair = JOptionPane.showInputDialog(null, "Affaire: ");
+        String parameterDescriptionAffair = JOptionPane.showInputDialog(null, "Description: ");
 
 
-        System.out.println(comp.getStatusComplaint());
+        Complaint comp = new Complaint(12,parameterName,parameterAffair,parameterDescriptionAffair,"System status: Avalible");
+
+
         comp.messageReceptionComplaint();
+        System.out.println(comp.getStatusComplaint());
     }
 }

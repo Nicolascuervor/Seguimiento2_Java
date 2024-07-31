@@ -3,11 +3,20 @@ package Ejercicio21;
 import javax.swing.*;
 
 public class Sandwich {
-    public int smallSandwich = 6000;
-    public int bigSandwich = 12000;
-    public int beacon = 3000;
-    public int turkey = 3000;
-    public int cheese = 2500;
+    public int smallSandwich;
+    public int bigSandwich;
+    public int beacon;
+    public int turkey;
+    public int cheese;
+
+
+    public Sandwich(int smallSandwich, int bigSandwich, int beacon, int turkey, int cheese) {
+        this.smallSandwich = smallSandwich;
+        this.bigSandwich = bigSandwich;
+        this.beacon = beacon;
+        this.turkey = turkey;
+        this.cheese = cheese;
+    }
 
     public void sandwichOrder() {
         int decision1 = Integer.parseInt(JOptionPane.showInputDialog(null, "Welcome to the SandwichOrder \n " +
@@ -25,7 +34,7 @@ public class Sandwich {
                     boolean check = true;
 
                     while (check) {
-                        int decisionYesw = Integer.parseInt(JOptionPane.showInputDialog(null, "Choose the opcionts do you want to add and enter 4 for finish your order. (you can add as many as you want) \n 1. Chili \n 2. Beacon \n 3. Turkey \n 4. Chesee \n 5. Continue"));
+                        int decisionYesw = Integer.parseInt(JOptionPane.showInputDialog(null, "Choose the opcionts do you want to add and enter 5 to finish your order. (you can add as many as you want) \n 1. Chili \n 2. Beacon \n 3. Turkey \n 4. Chesee \n 5. Continue"));
 
                         switch (decisionYesw) {
                             case 1:
@@ -61,7 +70,7 @@ public class Sandwich {
                     boolean check = true;
 
                     while (check) {
-                        int decisionYesw = Integer.parseInt(JOptionPane.showInputDialog(null, "Choose the opcionts do you want to add and enter 4 for finish your order. (you can add as many as you want) \n 1. Chili \n 2. Beacon \n 3. Turkey \n 4. Chesee \n 5. Continue"));
+                        int decisionYesw = Integer.parseInt(JOptionPane.showInputDialog(null, "Choose the opcionts do you want to add and enter 5 to finish your order. (you can add as many as you want) \n 1. Chili \n 2. Beacon \n 3. Turkey \n 4. Chesee \n 5. Continue"));
 
                         switch (decisionYesw) {
                             case 1:

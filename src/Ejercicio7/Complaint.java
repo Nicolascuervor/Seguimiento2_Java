@@ -7,6 +7,15 @@ public class Complaint {
     public String descriptionComplaint;
     private String statusComplaint;
 
+
+    public Complaint(int numComplaint, String namePerson, String affair, String descriptionComplaint, String statusComplaint) {
+        this.numComplaint = numComplaint;
+        this.namePerson = namePerson;
+        this.affair = affair;
+        this.descriptionComplaint = descriptionComplaint;
+        this.statusComplaint = statusComplaint;
+    }
+
     public String validateClaimStatus(){
         return getStatusComplaint();
     }

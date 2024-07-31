@@ -1,9 +1,14 @@
 package Ejercicio11;
 
+import javax.swing.*;
+
 public class Main {
     public static void main(String[] args) {
-        Ed eorodd = new Ed();
-        eorodd.num = -13;
+
+        int parameterNum = Integer.parseInt(JOptionPane.showInputDialog(null,"Enter some number"));
+
+        Ed eorodd = new Ed(parameterNum);
+
 
         System.out.println(eorodd.determine());
     }

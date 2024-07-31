@@ -11,7 +11,8 @@ public class MedicalAppointment {
     public String namepatient;
     private int privateMedicalCenter;
 
-        public void createAppointment() {
+
+    public void createAppointment() {
             JOptionPane.showMessageDialog(null, "Welcome, please enter the appointment details you received in your email to schedule your appointment.");
             appointmentID = Integer.parseInt(JOptionPane.showInputDialog(null, "Appointment code:    "));
             namepatient = JOptionPane.showInputDialog(null, "Enter the name of patient: ");

@@ -10,6 +10,14 @@ public class School {
     private int informatic;
 
 
+    public School(int physic, int chemistry, int biology, int math, int informatic) {
+        this.physic = physic;
+        this.chemistry = chemistry;
+        this.biology = biology;
+        this.math = math;
+        this.informatic = informatic;
+    }
+
     public int getPhysic() {
         return physic;
     }

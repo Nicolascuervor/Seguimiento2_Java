@@ -4,14 +4,18 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Triangle triangle = new Triangle();
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the angle one: ");
-        triangle.setNum1(sc.nextInt());
+        int parameternum1 = sc.nextInt();
         System.out.print("Enter the angle two: ");
-        triangle.setNum2(sc.nextInt());
+        int parameternum2 = sc.nextInt();
         System.out.print("Enter the angle tree: ");
-        triangle.setNum3(sc.nextInt());
+        int parameternum3 = sc.nextInt();
+
+
+        Triangle triangle = new Triangle(parameternum1, parameternum2, parameternum3);
+
+
 
         System.out.println(triangle.determine());
     }

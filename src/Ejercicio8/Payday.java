@@ -7,6 +7,12 @@ public class Payday {
 
     public int hoursWork;
 
+
+    public Payday(String nameEmploye, int hoursWork) {
+        NameEmploye = nameEmploye;
+        this.hoursWork = hoursWork;
+    }
+
     public String getNameEmploye() {
         return NameEmploye;
     }

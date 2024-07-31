@@ -4,12 +4,15 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        AreaRectangulo area = new AreaRectangulo();
+
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the base of the rectangle: ");
-        area.base = sc.nextInt();
+        int parameter1 = Integer.parseInt(sc.nextLine());
         System.out.print("Enter the height of the rectangle: ");
-        area.height = sc.nextInt();
+        int parameter2 =  Integer.parseInt(sc.nextLine());
+
+        AreaRectangulo area = new AreaRectangulo(parameter1,parameter2);
+
 
         area.checkdetails();
         area.calculateArea();

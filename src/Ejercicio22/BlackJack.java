@@ -20,7 +20,7 @@ public class BlackJack {
 
 
     public void game(){
-        int decision1 = JOptionPane.showConfirmDialog(null,"Your cards are: " + card1User + " and " + card2User + "\n Push 'Yes' to take the tird cart or Push 'No' to stay with two cards");
+        int decision1 = JOptionPane.showConfirmDialog(null,"Your cards are: " + card1User + " and " + card2User + ". Total = "+ (card1User + card2User) + "\n Push 'Yes' to take the tird cart or Push 'No' to stay with two cards");
         if(decision1 == JOptionPane.YES_OPTION){
             int total = card1User + card2User + card3User;
 
@@ -41,6 +41,9 @@ public class BlackJack {
             }
             else if (total == totalMachine) {
                 JOptionPane.showMessageDialog(null,"Both players have the same number of cards. \n Total " + namePlayer+ " cards: "+card1User+","+card2User+","+card3User + ". Total = "+ total+ " \n Total machine cards: " + card1Machine + "," + card2Machine + "," + card3Machine + " Total = " + totalMachine);
+            }
+            else if (total <= 21 && totalMachine > 21) {
+                JOptionPane.showMessageDialog(null,"The player " + namePlayer + " has won. \n Total " + namePlayer+ " cards: "+card1User+","+card2User+ ". Total = "+ total+ " \n Total machine cards: " + card1Machine + "," + card2Machine + "," + card3Machine + " Total = " + totalMachine);
             }
 
 
@@ -65,6 +68,9 @@ public class BlackJack {
             }
             else if (total == totalMachine) {
                 JOptionPane.showMessageDialog(null,"Both players have the same number of cards. \n Total " + namePlayer+ " cards: "+card1User+","+card2User+","+card3User + ". Total = "+ total+ " \n Total machine cards: " + card1Machine + "," + card2Machine + "," + card3Machine + " Total = " + totalMachine);
+            }
+            else if (total <= 21 && totalMachine > 21) {
+                JOptionPane.showMessageDialog(null,"The player " + namePlayer + " has won. \n Total " + namePlayer+ " cards: "+card1User+","+card2User+ ". Total = "+ total+ " \n Total machine cards: " + card1Machine + "," + card2Machine + "," + card3Machine + " Total = " + totalMachine);
             }
 
 

@@ -11,7 +11,10 @@ public class EmployePayment {
     private int net;
 
 
-
+    public EmployePayment(int basicSalary, int numHours) {
+        this.basicSalary = basicSalary;
+        this.numHours = numHours;
+    }
 
     public int getBonus() {
         return bonus;
@@ -74,4 +77,16 @@ public class EmployePayment {
         JOptionPane.showMessageDialog(null,"Your net payment is: "+ (getBasicSalary()+overtimeHours*getBasicSalary()));
     }
 
+
+    public void consult(){
+        employeInformation();
+        extraHours();
+        earn();
+        deductions();
+        net();
+    }
+
 }
+
+
+

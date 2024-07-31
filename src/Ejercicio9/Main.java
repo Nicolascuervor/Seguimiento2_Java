@@ -1,10 +1,14 @@
 package Ejercicio9;
 
+import javax.swing.*;
+
 public class Main {
     public static void main(String[] args) {
-        Norp num = new Norp();
 
-       num.setNum(21);
+        int parameterNum = (Integer.parseInt(JOptionPane.showInputDialog(null,"Enter some number: ")));
+
+        NegativeOrPositive num = new NegativeOrPositive(parameterNum);
+
 
         System.out.println(num.determine());
     }

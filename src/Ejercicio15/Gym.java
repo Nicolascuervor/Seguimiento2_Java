@@ -4,7 +4,7 @@ import javax.swing.*;
 
 public class Gym {
     public void menuPay(){
-         int decision = Integer.parseInt(JOptionPane.showInputDialog(null,"Welcome to Gymenu \n Witch mensuality do you want to pay? \n 1. 15 days = 18000 \n 2. 30 days = 35000 \n 3. 3 months = 86000 \n 4. Exit"));
+         int decision = Integer.parseInt(JOptionPane.showInputDialog(null,"Welcome to Gymenu \n Which mensuality do you want to pay? \n 1. 15 days = 18000 \n 2. 30 days = 35000 \n 3. 3 months = 86000 \n 4. Exit"));
          switch (decision){
              case 1:
                  int decision2 = JOptionPane.showConfirmDialog(null,"Are you sure you want to pay 15000 for 15 days?");

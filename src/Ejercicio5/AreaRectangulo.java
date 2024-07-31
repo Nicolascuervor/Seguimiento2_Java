@@ -4,6 +4,11 @@ public class AreaRectangulo {
     public int base;
     public int height;
 
+    public AreaRectangulo(int base, int height) {
+        this.base = base;
+        this.height = height;
+    }
+
     public void checkdetails(){
         if(base <= 0 || height <= 0) System.out.println( "You cant enter values less than 0");
     }

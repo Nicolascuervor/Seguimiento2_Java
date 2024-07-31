@@ -8,9 +8,21 @@ public class Send {
     private int weigth;
     private String CityOrigin;
     private String DestinetionCity;
-    private int cost = 5000;
-    private String StatusSend = "Avalible";
+    private int cost;
+    private String StatusSend;
 
+
+    public Send(int numguide, String date, String typepackaging, int idCustomer, int weigth, String cityOrigin, String destinetionCity, int cost, String statusSend) {
+        this.numguide = numguide;
+        this.date = date;
+        this.typepackaging = typepackaging;
+        this.idCustomer = idCustomer;
+        this.weigth = weigth;
+        this.CityOrigin = cityOrigin;
+        this.DestinetionCity = destinetionCity;
+        this.cost = cost;
+        this.StatusSend = statusSend;
+    }
 
     public String getDate() {
         return date;

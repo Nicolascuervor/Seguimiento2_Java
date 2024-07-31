@@ -3,8 +3,13 @@ package Ejercicio10;
 import javax.swing.*;
 
 public class Laundromat {
-    private int valueBig = 4000;
-    private int valueSmall = 3000;
+    private int valueBig;
+    private int valueSmall;
+
+    public Laundromat(int valueBig, int valueSmall) {
+        this.valueBig = valueBig;
+        this.valueSmall = valueSmall;
+    }
 
     public int getValueBig() {
         return valueBig;
@@ -28,7 +33,7 @@ public class Laundromat {
          switch (decision){
              case 1:
                  int quantity1 = Integer.parseInt(JOptionPane.showInputDialog(null,"How many big washing machine do you want rent? "));
-                 if(quantity1 < 3) JOptionPane.showMessageDialog(null,"The price for rent " + quantity1 + " big washing machine is " + getValueBig()*quantity1 + " dollars");
+                 if(quantity1 < 3) JOptionPane.showMessageDialog(null,"The price for rent " + quantity1 + " big washing machine is " + valueBig*quantity1 + " dollars");
                  if(quantity1 > 3) JOptionPane.showMessageDialog(null,"The price for rent " + quantity1 + " big washing machine is " + (((getValueBig()*quantity1)-(getValueBig()*quantity1)*0.03)) + " dollars");
                  break;
              case 2: int quantity2 = Integer.parseInt(JOptionPane.showInputDialog(null,"How many small washing machine do you want rent? "));
@@ -44,4 +49,7 @@ public class Laundromat {
 
 
     }
+
+
+
 }

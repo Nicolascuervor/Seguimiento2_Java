@@ -3,18 +3,32 @@ package Ejercicio20;
 import javax.swing.*;
 
 public class Phones {
-    private int movistar = 45000;
-    private int tigo = 30000;
-    private int claro = 40000;
+    private int movistar;
+    private int tigo;
+    private int claro;
 
-    private int tigoInternational = 200;
-    private int tigoPackage = 12000;
+    private int tigoInternational;
+    private int tigoPackage;
 
-    private int claroInternational = 100;
-    private int claroPackage = 18000;
+    private int claroInternational;
+    private int claroPackage;
 
-    private int movistarInternational = 250;
-    private int movistarPackage = 8000;
+    private int movistarInternational;
+    private int movistarPackage;
+
+
+    public Phones(int movistar, int tigo, int claro, int tigoInternational, int tigoPackage, int claroInternational, int claroPackage, int movistarInternational, int movistarPackage) {
+        this.movistar = movistar;
+        this.tigo = tigo;
+        this.claro = claro;
+        this.tigoInternational = tigoInternational;
+        this.tigoPackage = tigoPackage;
+        this.claroInternational = claroInternational;
+        this.claroPackage = claroPackage;
+        this.movistarInternational = movistarInternational;
+        this.movistarPackage = movistarPackage;
+    }
+
 
 
     public int getMovistar() {

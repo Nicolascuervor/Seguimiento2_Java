@@ -4,13 +4,16 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Help help = new Help();
-
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter your gender (female or male): ");
-        help.gender = sc.next();
+        String parameterGender = sc.nextLine();
         System.out.print("Enter your age: ");
-        help.age = sc.nextInt();
+        int parameterAge = sc.nextInt();
+
+
+
+        Help help = new Help(parameterGender,parameterAge);
+
 
         System.out.println(help.pay());
     }
