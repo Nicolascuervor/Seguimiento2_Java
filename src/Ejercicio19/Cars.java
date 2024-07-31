@@ -3,8 +3,8 @@ package Ejercicio19;
 import javax.swing.*;
 
 public class Cars {
-    public void menu(){
-        int decision1 = Integer.parseInt(JOptionPane.showInputDialog(null,"Welcome to the carsMaintenance center \n " +
+    public void menuCar(){
+        int decision1 = Integer.parseInt(JOptionPane.showInputDialog(null,"Welcome to the CarsMaintenance center \n " +
                 "What is the model number of your car? \n "));
 
 

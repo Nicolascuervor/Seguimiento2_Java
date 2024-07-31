@@ -3,7 +3,7 @@ package Ejercicio18;
 import javax.swing.*;
 
 public class Maintenance {
-    public void menu(){
+    public void menuCenter(){
         int decision1 = Integer.parseInt(JOptionPane.showInputDialog(null,"Welcome to the maintenance center \n " +
                 "How we can help you today? \n " +
                     "1. My PC makes a sound when it starts up, and the hard drive spins. \n " +
